@@ -3,26 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DocumentRonellBaptiste</title>
     <link rel="stylesheet" href="https://firebasestorage.googleapis.com/v0/b/dcit-web.appspot.com/o/a2main.css.css?alt=media&token=372ab3f9-ae18-4058-83ce-2253593a0555">
 
     <style>
-     body{color: #fafafa;
-        
+     body{color: #fafafa; /*number 4*/
+    padding:0; 
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1;
+    display:flex;
+    flex-direction: column;
+     align-items: center;
+     justify-content: center;   
     border-spacing: 0vw;
-    max-width: max-content;}
+    width: 100vw;
+    height: 100vh;}
     
-    section{height: 90px;
-        width: 70vw;
-    border-top: -5px;
-    border-left: auto;
-    border-right: auto ;
-    border: 1px, solid, #b5b5b5;    
-    border-spacing: 30px;
+    section{height: 90px; /*number 1*/
+        width: 70vw; /*number 2*/
+    border-top: -5px; /*number 3*/
+    border-left: auto; /*number 4*/
+    border-right: auto/*number 5*/ ;
+    border: 1px  solid #b5b5b5;    /*number 6*/
+    border-radius: 2px; /*number 7*/
+    padding: 0 0 0 30px; /*number 8*/
+    display: flex;align-items: center;
     }
-    .user{display: inline-block;}
-        div>.user{width: 18%;}
-      
+    .user{display: inline-block; width: 18%; text-align: center;}
+     
+    .user p {margin: 0;padding: 0;text-align: center;
+        font-family: 'Lucida Sans Unicode';
+     font-weight: 100;
+     font-size: smaller;
+    }
+    .post-header img{width: 40px; height: 40px;border-radius: 50%;margin-right: 10px;}
+   /* Post-header class */
+.post-header {
+    background-color: white;
+    height: 50px; 
+    width: inherit;
+    padding: 5px; 
+    border-bottom: 1px solid #b5b5b5; 
+    box-sizing: border-box; 
+    align-items: center;
+     display: flex;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+    display: inline-block; /* number 1*/
+    background-color: white; /*number 2*/
+    width: 100%; /* number3 */
+    height: 54px; /* number4*/
+    border-bottom: 1px solid #e5e5e5; /* number5 */
+    box-sizing: border-box; /* number5 */
+}
+
+/* Instagram Image */
+.instagram-image {
+    height: 40px; /* number1 */
+    position: relative; /* number2 */
+}
+
+/* Search Box */
+.search-box {
+    height: 25px; /* number1 */
+    width: 30vw; /* number3 */
+    position: relative; /* number2*/
+    display: block;
+    margin: auto;
+    left: 35vw; /* number4 */
+    right: 35vw; /* number5 */
+    background-color: #fafafa; /* number6*/
+    text-align: center; /* number7 */
+    border: 1px solid #b5b5b5; /* number8 */
+    border-radius: 3px; /* number9*/
+}
+
+/* Actions Image */
+.actions-image {
+    height: 40px; /* number1 */
+    position: relative; /* number2 */
+    right: 0; /* number3 */
+}
+
+/* Test Suite 1: Image Descendants of the User Class */
+.user img {
+    margin-top: 5px; /*number1 */
+    border-radius: 50%; /* number2 */
+    border: double 4px #b5b5b5; /*number3 */
+    width: 56px; /* number4 */
+    height: 56px; /* number5*/
+    display: block; /* number6 */
+    margin-left: auto; /* number7 */
+    margin-right: auto; /* number8 */
+}
+
+
+.post-image{width: 100%; max-height: 400px; object-fit: cover;}
+.post {
+    border: 1px solid #b5b5b5; 
+    border-radius: 2px; 
+    height: 60vh;
+    width: 560px;
+    margin: 10px auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 119px;
+    margin-right: 119px; 
+    margin-top: 10px; 
+
+}
     </style>
 </head>
 <body>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Ronell Baptiste</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <style>
+                p:hover{outline: 2px double lightblue;}
+             
+                div{/*margin left and right:auto can center texts
+                  div>h2{}; applies styles to elements within the div*/
+  width: 400px;
+  height: 300px;
+  /*margin:auto;*/
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-color: white;
+  color: black;
+  text-align: center;
+  box-shadow:  0 8px 16px 0 rgba(0,0,0,0.2);
+  border-radius:4px;
+  padding: 5px;
+}
+
+div> h2{
+  text-decoration: none;
+}
+                .bold{
+  font-weight: bold;
+}
+
+h2{
+  text-align: center;
+  text-decoration: underline overline solid black;
+}
+
+p{
+  text-align: justify;
+  width:50vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section{
+  border-bottom: 5px solid black;
+  height: 40vh;
+  overflow-y:scroll
+}
+
+#section1::before{
+  background-image: url("https://images.unsplash.com/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80");
+  background-size: stretch;
+  background-position: center;
+  content: "";
+  position: absolute;
+  width:100%;
+  height: 40vh;
+  z-index: -2;
+  opacity: 0.3;
+}
+
+#section2{
+  padding: 2em;
+  color: white;
+  background: rgb(131,58,180);
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(29,211,253,1) 50%, rgba(252,176,69,1) 100%);
+}
+               p span{font-weight: bold;}/*stops the styling from being overrided with other styles*/
+    
+        </style>
+      </head>
+      <body>
+        <section id="section1">
+        
+     
+        <h1>Sample content</h1>
+        <h2>Shakespearean Plays</h2>
+       
+        <p> <span >Why </span>won't students come to labs? This is something I always ponder. After unprepared students write exams, They watch their marks in wonder.</p>
+        
+        <p><span >Why </span>won't students come to labs? What is more important than class? How can you be a student if you don't even try to pass?</p>
+       
+        <p> <span>Why</span> won't students come to labs? It happens all the time. If you came to labs, you'd know what to do. But you would rather duck and go lime.</p>
+       
+        <p> <span >Why</span> won't students come to labs? I see them all now stressing. If you only learned this basic programming, You would surely now be zessing.</p>
+     
+            
+        </section>
+        <section id="section2">
+          <div>Notice we must select the h2 child element and apply a text decoration of none so that it overrides the other h2 style written in task 4.
+             This should produce the following result.
+            
+             This should apply an image background to section 1 and a gradient background to section 2.
+             The selector '::' is used to specify pseudo elements. We use the pseudo element "before" to write a background image to the dom before the section 1 element. The styles within the selector is just a recipe we follow for displaying background images while keeping the text readable.
+             </div>
+            <h1>Section 2
+               
+            </h1>
+       </section>
+          <ol>
+            <li>Height: Uses :hover psuedo class to hide elements of an ordered list when the mouse hovers over them </li>
+            <li>Width</li>
+            <li>Padding:Spacing within an element</li>
+            <li>Border:the edges of the element</li>
+            <li> Margin: Spacing outside the element</li>
+          </ol> 
+       
+        
+        <img src="BorderProperty.png" alt="Box model">
+       <img src="BorderStyling.png">
+        <img src="BorderCustom.png">
+        <img src="ExampleBorder.png" >
+        <img src="Display.png" >
+        <img src="TextEditStyles.png" > 
+        <img src="Font.png">
+          <img src="Borders.png">
+          <img src="Overflow.png">
+          <img src="Shadows.png">
+    </body>
+
+</html>
